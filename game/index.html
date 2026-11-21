@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gilded Shadow — a moonlit gallery heist</title>
+<link rel="icon" href="data:,">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #070a12; }
+  #game { position: fixed; inset: 0; margin: auto; display: block; touch-action: none; background: #0b0f1a; }
+  /* Read aloud, never shown: the status line screen readers announce. */
+  #status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  #test-results { position: absolute; left: 0; top: 0; color: #e8ecf5; font: 12px monospace; white-space: pre; background: rgba(0,0,0,0.7); padding: 8px; }
+</style>
+</head>
+<body>
+<canvas id="game" width="960" height="640" aria-label="Gilded Shadow: a top-down stealth game. Sneak past the night wardens, steal the moonshards, and reach the skylight unseen."></canvas>
+<p id="status" role="status" aria-live="polite"></p>
+<pre id="test-results"></pre>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
